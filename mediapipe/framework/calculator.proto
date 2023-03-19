@@ -132,7 +132,7 @@ message InputStreamInfo {
   // By default, MediaPipe requires graphs to be acyclic and treats cycles in a
   // graph as errors. To allow MediaPipe to accept a cyclic graph, set the
   // back_edge fields of the input streams that are back edges to true. A
-  // cyclic graph usually has an obvious forward direction, and a back edge
+  // cyclic graph usually has an obvious forward direction, and a back edge（背向边）
   // goes in the opposite direction. For a formal definition of a back edge,
   // please see https://en.wikipedia.org/wiki/Depth-first_search.
   bool back_edge = 2;
